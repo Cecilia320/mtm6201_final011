@@ -1,0 +1,272 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3e7db;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #444;
+}
+
+h1 {
+    align-items: center; 
+}
+.chengdu-section {
+    max-width: 800px; /* Limit the section width */
+    margin: 20px auto; /* Center align the section */
+    padding: 20px;
+    background-color: #f3e7db; /* Light background for contrast */
+  }
+.chengdu-image {
+    max-width: 100%; /* Responsive image scaling */
+    height: auto;
+   }
+  
+  /* Description Styling */
+.chengdu-description {
+    color: #333; /* Dark gray text for readability */
+    text-align: justify; /* Justify the paragraph */
+    padding: 10px 20px; /* Add padding around text */
+    border-top: 2px solid #333; /* Separator line above text */
+    margin-top: 10px;
+  }
+  
+  /* Highlighted Title Text */
+.highlight {
+    font-weight: bold;
+    font-style: italic;
+    color: #000; /* Black text */
+    font-size: 1.2rem;
+  }
+
+/* Section for the Three Treasures */
+.treasures {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px;
+}
+
+.treasures h2 {
+    background-color: #f3e7db;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Treasure Item Layout */
+.treasure-item {
+    background-color: #f3e7db;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.treasure-item img {
+    float: left; /* Floats the image to the left */
+    width: 150px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Add spacing between the image and text */
+}
+
+.treasure-info h3 {
+    margin-top: 0; /* Remove extra margin at the top if necessary */
+}
+
+.treasure-info hr {
+    border: 0;
+    border-top: 2px solid #333;
+    width: 50px;
+    margin: 10px 0;
+}
+
+.treasure-info p {
+    margin: 10px 0; /* Add spacing between text */
+}
+
+/* Back Button Styles */
+.back-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #d1d1d1;
+}
+
+/* Container for the entire section */
+.section-container {
+    padding: 20px;
+    background-color: #f9f4ee; /* Light beige background */
+  }
+  
+  /* Section title */
+  .section-container h2 {
+    background-color:#f3e7db;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center-align the title */
+  }
+  
+  /* Grid container for the cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between cards */
+  }
+  
+  /* Individual card styling */
+  .card {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: space-between; /* Evenly distribute items vertically */
+    padding: 15px;
+    background-color: #f4e7d8; /* Beige card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Placeholder for profile picture */
+  .card img {
+    width: 80px; /* Fixed size for placeholder */
+    height: 80px;
+    background-color: #d9d9d9; /* Light gray for the placeholder */
+    border-radius: 50%; /* Circular shape */
+    display: block;
+  }
+  
+  /* Placeholder text inside the profile picture */
+  .card img::before {
+    content: "Profile Picture";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #555;
+    font-size: 12px;
+  }
+  
+  /* Name styling */
+  .card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Facebook icon styling */
+  .card .facebook-icon {
+    width: 24px;
+    height: 24px;
+    color: #4267b2; /* Facebook blue */
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  /* Back button styling */
+  .back-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f3e7db;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+@media screen and  (mix-width: 768px) {
+    .chengdu-section {
+         display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px;
+        
+    }
+
+    .chengdu-image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+   
+}
+
+/* Desktop (min-width: 1025px) */
+@media screen and  (mix-width: 1100px) {
+    .welcome-content {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center text for smaller screens */
+      }
+    
+      .image-container {
+        margin-bottom: 20px; /* Add space below the image */
+      }
+    }
+    
